@@ -6,8 +6,8 @@ and an evil one. The program can solve it, provided you run it with a
 stack size of about 50m. For simpler Sudoku's, you will not need this big
 of a stack size.
 
-Note: you need to change to path to the sudoku.txt file in the code to point
-to your sudoku.txt file. Then compile, preferable with a '-Xss50m' option 
+Note: you need to change the path to the sudoku.txt file in the code to point
+to your sudoku.txt file. Then compile, preferably with a '-Xss50m' option, 
 to allocate a stack size of 50m.
 
 ~Signed
