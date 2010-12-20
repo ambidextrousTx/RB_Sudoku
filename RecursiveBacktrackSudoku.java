@@ -9,7 +9,7 @@ import java.io.*;
  */
 
 public class RecursiveBacktrackSudoku {
-    public static boolean sudoku(int [][] sudokuBoard, boolean [] stickies, int cell, boolean back) {
+    private static boolean sudoku(int [][] sudokuBoard, boolean [] stickies, int cell, boolean back) {
 
         if(cell == 81) // Successfully solved all blanks
             return true;
@@ -171,9 +171,9 @@ public class RecursiveBacktrackSudoku {
         return safe;
     }
 
-    public static String[] getInput() {
+    private static String[] getInput() {
         String [] inputs = new String[9];
-        File file = new File("C:\\Users\\Ambidextrous\\Documents\\Code\\DataStructures\\src\\sudoku.txt");
+        File file = new File("path/to/file/sudoku.txt");
 
         try {
             FileInputStream fis = new FileInputStream(file);
@@ -195,7 +195,7 @@ public class RecursiveBacktrackSudoku {
         return inputs;
     }
 
-    public static int [][] fillInput(String [] inLines) {
+    private static int [][] fillInput(String [] inLines) {
         int N = inLines.length;
         int [][] sudokuBoard = new int[N][N];
         for(int i = 0; i < N; i++) {
@@ -206,7 +206,7 @@ public class RecursiveBacktrackSudoku {
         return sudokuBoard;
     }
 
-    public static boolean [] getStickies(int [][] sudokuBoard) {
+    private static boolean [] getStickies(int [][] sudokuBoard) {
         int L = sudokuBoard.length;
         boolean [] stickies = new boolean[L*L];
 
