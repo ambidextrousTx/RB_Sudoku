@@ -1,0 +1,11 @@
+A Sudoku solver using recursive backtracking in Java.
+
+Takes a plain-text file containing the unsolved puzzle in matrix form,
+with 0's for the unknowns. The example provided is from http://www.websudoku.com,
+and an evil one. The program can solve it, provided you run it with a 
+stack size of about 50m. For simpler Sudoku's, you will not need this big
+of a stack size.
+
+~Signed
+AmbidextrousTx
+Dec 20, 2010
